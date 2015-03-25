@@ -1,0 +1,7 @@
+/Users/ekoun/android-JobScheduler/Application/build/intermediates/classes/debug
+/Users/ekoun/android-JobScheduler/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-24792131811663aa7bf48b4de0fad1a8e742f55f.jar
+/Users/ekoun/android-JobScheduler/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-b571092b8dc4680fcd665e9cf24fd0e83cc292b3.jar
+/Users/ekoun/android-JobScheduler/Application/build/intermediates/pre-dexed/debug/classes-add38ea74b978a606636149bf0b19f9d83a5c192.jar
+/Users/ekoun/android-JobScheduler/Application/build/intermediates/pre-dexed/debug/classes-ab41b90b6462599a52babc26586028b89e3fb058.jar
+/Users/ekoun/android-JobScheduler/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-4cd6fece3eda7a826572cf01a1ff74ce9bd5ceaf.jar
+/Users/ekoun/android-JobScheduler/Application/build/intermediates/pre-dexed/debug/classes-262b0d5063efe3a0760dc928f64743c7400045ce.jar

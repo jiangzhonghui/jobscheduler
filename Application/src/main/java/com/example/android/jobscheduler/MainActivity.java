@@ -29,6 +29,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.Messenger;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -49,6 +50,8 @@ public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Log.i(TAG,"onCreate: " + savedInstanceState);
         setContentView(R.layout.sample_main);
         Resources res = getResources();
         defaultColor = res.getColor(R.color.none_received);
@@ -65,6 +68,7 @@ public class MainActivity extends Activity {
         mAnyConnectivityRadioButton = (RadioButton) findViewById(R.id.checkbox_any);
         mRequiresChargingCheckBox = (CheckBox) findViewById(R.id.checkbox_charging);
         mRequiresIdleCheckbox = (CheckBox) findViewById(R.id.checkbox_idle);
+
         mServiceComponent = new ComponentName(this, TestJobService.class);
         // Start service and provide it a way to communicate with us.
         Intent startServiceIntent = new Intent(this, TestJobService.class);
@@ -116,6 +120,15 @@ public class MainActivity extends Activity {
             return false;
         }
         return true;
+    }
+
+    //normally we do not need to stop that service
+    @Override
+    protected void onDestroy() {
+        Intent startServiceIntent = new Intent(this, TestJobService.class);
+        stopService(startServiceIntent);
+
+        super.onDestroy();
     }
 
     /**
